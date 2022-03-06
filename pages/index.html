@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Property Website </title>
+    
+    <link rel="stylesheet" href="I:\WebDevelopment\Tasks\WebPage\css\style.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Buyers">Buyers</a></li>
+            <li><a href="#Tenants">Tenants</a></li>
+            <li><a href="#Owners">Owners</a></li>
+            <li><a href="#Dealers">Dealers</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+
+</html>
