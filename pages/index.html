@@ -9,23 +9,33 @@
 
 </head>
 <body>
-    <header>
+    <div class="header">
         <a href="#" class="logo">Logo</a>
-        <ul>
+        <ul class="header-menu">
             <li><a href="#Home">Home</a></li>
             <li><a href="#Buyers">Buyers</a></li>
             <li><a href="#Tenants">Tenants</a></li>
             <li><a href="#Owners">Owners</a></li>
             <li><a href="#Dealers">Dealers</a></li>
         </ul>
-    </header>
+    </div>
+
+    <div class="wrapper">
+        <input type="text" class="input" placeholder="Search here"> 
+        <div class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
     <section class="banner"></section>
     <script type="text/javascript">
         window.addEventListener("scroll", function() {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
+            var wrap = document.querySelector(".wrapper, .header");
+            wrap.classList.toggle("sticky", window.scrollY > 0);
         })
     </script>
+
+    
 </body>
 
 
